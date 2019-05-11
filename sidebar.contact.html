@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InstaRide</title>
+   <link rel="icon" href="car13.png">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+  body{
+    color: #000;
+  }
+    #closeNav{
+      background-color: #fff;
+      height: 400px;
+      width: 360px;
+      padding: 30px;
+      transition: 1s;
+      padding-top: 20px;
+      box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+      margin-top: 100px;
+
+    }
+    #div{
+      height: 30px;
+      width: 30px;
+      background-color: #f00;
+      margin-left: 330px;
+      position: absolute;
+      margin-top: -20px;
+      color: #fff;
+      text-align: center;
+    }
+    #form-inp{
+      margin-bottom: 15px;
+    }
+    #div span{
+      margin-top: 7px;
+    }
+    #btn_Send{
+     width: 300px;
+     color: #fff;
+     background-color: #00cc99;
+    }
+    #closeNav{
+      visibility: hidden;
+    }
+    
+
+        /*******************/
+        .navigation-open{
+          width: 250px;
+            height: 100%;
+            display: block;
+            background: #fff;
+            position: fixed;
+            left: 0;
+            border-radius: 0% 1% 1% 0%;
+        }
+        
+        .navigation-open #closeNav{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .navigation-open .topbar{
+            top: 21px;
+            transform: rotate(45deg);
+            background: #000080;
+            width: 15px;
+        }
+        .navigation-open .firstbar{
+            visibility: hidden;
+            transform: translateX(30px);
+            width: 0;
+            top: 22px;
+        }
+        .navigation-open .middlebar{
+            width: 0;
+            top: 22px;
+            visibility: hidden;
+            transform: translateX(30px);
+        }
+        .navigation-open .bottombar{
+            width: 15px;
+            top: 21px;
+            transform: rotate(-45deg);
+        }
+</style>
+<body>
+  <!-- <div class="sidebar-contact">
+    <div class="toggle"></div>
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="" placeholder="Name">
+      <input type="email" name="" placeholder="Email">
+      <input type="rel" name="" placeholder="Phone Number">
+      <textarea type="text" name="" placeholder="Message"></textarea>
+      <input type="submit" name="submit" value="Send">
+    </form>
+  </div> -->
+
+  <div class="toggle" id="div"><span class="fa fa-sign-in"></span>
+      <span class="topbar"></span>
+      <span class="middlebar"></span>
+      <span class="bottombar"></span>
+    </div>
+  <nav id="closeNav">
+    
+    <div class="sidebar-contact">
+      <h4>Contact Us</h4>
+      <form>
+        <input type="text" name="" id="form-inp" class="form-control" placeholder="Name">
+        <input type="email" name="" id="form-inp" class="form-control" placeholder="Email">
+        <input type="rel" name="" id="form-inp" class="form-control" placeholder="Phone Number">
+        <textarea type="text" name="" id="form-inp" class="form-control" placeholder="Message"></textarea>
+        <input type="submit" id="btn_Send" class="btn btn-default" name="submit" value="Send">
+      </form>
+    </div>
+  </nav>
+   <script type="text/javascript">
+
+
+      $(function(){
+            $("#div").click(function(){
+                $("#closeNav").toggleClass('navigation-open');
+            });
+        });
+   </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.login_img{
+   background-image: url('ride1.png');
+   height: 650px;
+   background-position: fixed;
+   background-size: cover; 
+   padding-top: 100px;
+ }
+
+.login_banner{
+   background-color: rgba(255, 255, 255, 0.93);
+   height: 650px;
+   background-size: cover;
+   margin-top: -100px;
+   padding-top: 120px;
+}
+
+#inp_modal{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  border: 1.2px solid #f9ecf2;
+}
+#sign_in{
+	font-weight: 700;
+	text-align: center;
+}
+.well{
+	text-align: center;
+	width: 500px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.66);
+    border: none;
+
+}
+
+#btn_modal{
+width: 400px;
+ color: #ecc5d9;
+ background-color: #8d2f5d;
+ margin-top: 15px;
+}
+#btn_modal:hover{
+ background-color: #fff;
+ color: #d17aa4;
+ transform: translateY(-3px);
+ box-shadow: 0 1rem 2rem rgba(217, 140, 178, 0.2);
+ border: none;
+ border: 1.2px solid #f9ecf2;
+}

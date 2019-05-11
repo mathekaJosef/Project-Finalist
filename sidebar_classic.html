@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InstaRide</title>
+   <link rel="icon" href="car13.png">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="project_f.css">
+
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .menu{
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .item{
+    border-top: 1px solid #2980b9;
+    overflow: hidden;
+  }
+  .btn{
+    display: block;
+    padding: 16px 20px;
+    background: #3498db;
+    color: #fff;
+    position: relative;
+  }
+  .btn:before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #3498db;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+  }
+  .btn i{
+    margin-right: 10px;
+  }
+  .smenu{
+    background: #333;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+  }
+  .smenu a {
+    display: block;
+    padding: 16px 26px;
+    color: #fff;
+    font-size: 14px;
+    margin: 4px 0;
+    position: relative;
+  }
+  .smenu a:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #3498db;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .smenu a:hover:before{
+    opacity: 1;
+  }
+
+  .item:target .smenu{
+    max-height: 10em;
+  }
+
+
+</style>
+<body>
+  <div class="middle">
+    <div class="menu">
+      <li class="item">
+        <a href="#" class="btn"><i class="fa fa-user"></i>Dashboard</a>
+      </li>
+
+      <li class="item"  id="brands">
+        <a href="#brands" class="btn"><i class="fa fa-user"></i>Brands</a>
+        <div class="smenu">
+          <a href="">Create brand</a>
+          <a href="">Manage brands</a>
+        </div>
+      </li>
+
+      <li class="item" id="vehicle">
+        <a href="#vehicle" class="btn"><i class="fa fa-envelope"></i>Vehicle</a>
+        <div class="smenu">
+          <a href="">Post vehicle</a>
+          <a href="">Manage vehicles</a>
+        </div>
+      </li>
+
+      <li class="item">
+        <a href="#" class="btn"><i class="fa fa-user"></i>Manage bookings</a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="btn"><i class="fa fa-user"></i>Manage testimonials</a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="btn"><i class="fa fa-user"></i>Manage customers query</a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="btn"><i class="fa fa-user"></i>Registered users</a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="btn"><i class="fa fa-user"></i>Manage pages</a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="btn"><i class="fa fa-user"></i>Update contact info</a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="btn"><i class="fa fa-user"></i>Manage subscribers</a>
+      </li>
+    </div>
+  </div>
+</body>
+</html>

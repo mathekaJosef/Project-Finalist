@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+}
+body{
+	font-family: verdane, sans-serif;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	font-family: tahoma, sans-serif;
+	background: linear-gradient(to right bottom, rgba(141, 47, 93, 0.8), rgba(141, 47, 93, 0.8)), url('car8.jpg') center no-repeat;
+	background-size: cover;
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 95vh, 0% 100%);
+	border-radius: 0% 0% 300% 0%;
+	box-shadow: 0 0 200px 0 rgba(141, 47, 93, 0.8);
+}
+nav{
+	width: 80%;
+	height: 7rem;
+	line-height: 7rem;
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	font-size: 1.4rem;
+	transform: translateX(-50%);
+	/*text-transform: uppercase;*/
+}
+.logo-box{
+	float: left;
+}
+
+nav ul{
+	list-style: none;
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	padding: 0 1.5rem;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff; 
+}
+nav ul li a:hover{
+	padding-bottom: .5rem;
+	border-bottom: .1rem solid #d98cb2;
+	text-decoration: none;
+	color: #d98cb2;
+}
+
+.text-box{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem;
+	text-align: center;
+}
+.primary-heading{
+	color: #fff;
+	/*text-transform: uppercase;*/
+	margin-bottom: 6rem;
+	mar
+}
+.heading-main{
+	display: block;
+	font-size: 6rem;
+	font-weight: 400;
+	letter-spacing: 2.5rem;
+	margin-right: -3.5rem;
+	animation: moveLeft 1s ease-in;
+}
+#head_topic{
+	/*margin-left: 100px;*/
+}
+#insta{
+	/*animation: moveRight 1s ease-in;*/
+	font-size: 6rem;
+	margin-left: -400px;
+	margin-top: 90px;
+	letter-spacing: 1.5rem;
+	color: #fff;
+	animation: moveLeft 1.5s ease-in;
+}
+#ride{
+	/*animation: moveRight 1s ease-in;*/
+	font-size: 6rem;
+	margin-top: -130px;
+	margin-left: 10px;
+	letter-spacing: 1.5rem;
+	position: absolute;
+	color: #da8bb4;
+	animation: moveRight 1.5s ease-in;
+}
+#car13{
+	margin-top: -127px;
+	margin-left: -125px;
+	max-width: 130px;
+	/*animation: moveDown 1s ease-in;*/
+	animation: moveDown 1.5s ease-in;
+}
+.heading-sub{
+	display: block;
+	font-size: 3.5rem;
+	font-weight: 700;
+	letter-spacing: 0.75rem;
+	/*margin-right: -1.75rem;*/
+	animation: moveUp 2s ease-in;
+	color: #fff;
+	margin-left: -80px;
+
+}
+.btn{
+	/*text-transform: uppercase;*/
+	text-decoration: none;
+	padding: 1.5rem 4rem;
+	display: inline-block;
+	border-radius: 10rem;
+	font-size: 1.3rem;
+	margin-left: -100px;
+	border: none;
+	background-color: #fff;
+	color: #8d2f5d;
+	transition: all .2s;
+	animation: moveUp 2.5s ease-in;
+}
+.btn:hover{
+	transform: translateY(-3px);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+@keyframes moveLeft {
+	0%{
+		opacity: 0;
+		transform: translateX(-15rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveRight {
+	0%{
+		opacity: 0;
+		transform: translateX(15rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveUp {
+	0%{
+		opacity: 0;
+		transform: translateY(7rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveDown {
+	0%{
+		opacity: 0;
+		transform: translateY(-8rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+/*arrow*/
+#span_arrow{
+	font-size: 1.9rem;
+	margin-left: 1rem;
+	color: #8d2f5d;
+}
